@@ -13,10 +13,17 @@ export const Container = styled.div`
   border-bottom-right-radius: 10%;
   border-bottom-left-radius: 10%;
 
+  font-family: "Sixtyfour";  
   h1 {
     font-family: "Inter", "Roboto";
     font-size: 26px;
     
+  }
+  p{
+    cursor: pointer;
+  }
+  .darkmode{
+    cursor: pointer;
   }
 
   ul {
@@ -24,7 +31,6 @@ export const Container = styled.div`
     gap: 4.5rem;
     font-size: 14px;
     text-transform: uppercase;
-    font-family: "Sixtyfour";  
   }
 
   li {
