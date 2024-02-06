@@ -1,7 +1,5 @@
 import styled, { keyframes } from "styled-components"
 
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
@@ -24,8 +22,10 @@ export const Section = styled.section`
   width: 100%;
   height: 100vh;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:  auto auto;
   place-items: center;
-  grid-template-columns: auto auto ;
+
   p {
     font-size: 30px;
     color:#252526;
@@ -39,7 +39,16 @@ export const Section = styled.section`
   .imglog {
     position:  relative;
     animation: ${animation} 3s ease-in-out infinite ;
-  }
+    }
+  .icons{
+    display: flex;
+    position: absolute;
+    bottom: 2%;
+    left: 46%;
+    margin-bottom: 20px;
+    gap: 30px;
+    }
+
   .splash{
     position:  relative;
   }
@@ -53,13 +62,6 @@ export const Section = styled.section`
     z-index: 1;
   }
   
-  .icons{
-    position: absolute;
-    bottom: 20%;
-    right: 15%;
-    display: flex;
-    gap: 30px;
-  }
   `
 
 export const StyledGitHUb = styled.div`
