@@ -5,10 +5,26 @@
 }
 
 body {
-  overflow: hidden;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #252526;
+
+  overflow-y: scroll;
+  
+  /* Estilizando o scrollbar para navegadores WebKit (Chrome, Safari, etc.) */
+  &::-webkit-scrollbar {
+    width: 9px; /* Largura do scrollbar */
+    background-color: white;
+  }
+
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #252526; /* Cor do polegar do scrollbar */
+    border-radius: 6px; /* Borda arredondada do polegar do scrollbar */
+   
+  }
+
+
 }
 
 ul {
