@@ -1,5 +1,6 @@
-import About from './pages/about/about'
-import Home from './pages/home/home'
+import About from './pages/about'
+import Home from './pages/home'
+import Projects from './pages/projects';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Home/>
       <About/>
+      <Projects/>
     </>
   )
 }
